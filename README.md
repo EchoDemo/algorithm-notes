@@ -1,4 +1,5 @@
 # algorithm-notes
+#Just do it
 
 #include<stdio.h>
 int main(){
