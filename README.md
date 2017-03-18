@@ -1,2 +1,7 @@
 # algorithm-notes
-c/c++--PAT
+
+#include<stdio.h>
+int main(){
+   printf("Hello World!");
+   return 0;
+}
