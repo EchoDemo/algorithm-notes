@@ -11,7 +11,7 @@ int main()
 	int i, sum = 0;
 	for (i = 1;i <= 100;i++) {
 		if (i % 2 == 1) continue;//跳出当前这一轮循环,实现偶数的相加
-    sum = sum + i;
+                sum = sum + i;
 	}
 	printf("sum=%d\n", sum);
 	system("pause");
