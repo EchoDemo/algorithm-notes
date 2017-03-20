@@ -11,6 +11,6 @@ int main()
 	printf("%.0f %.0f\n", floor(db1),ceil(db1));
 	printf("%.0f %.0f\n", floor(db2),ceil(db2));
 	system("pause");
-  return 0;
+        return 0;
 }
 
