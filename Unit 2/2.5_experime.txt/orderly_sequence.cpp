@@ -19,11 +19,11 @@
 int main() {
 	int i, a[10], tmp;
 	for (i = 0;i <= 9;i++) {
-			scanf("%d", &a[i]);//初始化数组;
-  }
+		scanf("%d", &a[i]);//初始化数组;
+        }
 	for (i = 9;i >= 1;i--) {
 		if (a[i]<a[i - 1]) {//排序;			
-      tmp = a[i];
+                        tmp = a[i];
 			a[i] = a[i - 1];
 			a[i - 1] = tmp;
 		}
