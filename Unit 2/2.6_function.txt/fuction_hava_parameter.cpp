@@ -1,3 +1,4 @@
+//带参函数，函数的参数可以不止一个。
 #include "stdafx.h"
 #include<cstdio>
 #include<cstdlib>
