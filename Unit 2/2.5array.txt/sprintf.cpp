@@ -1,8 +1,6 @@
 #include "stdafx.h"
 #include<cstdio>
 #include<cstdlib>
-#include<cstring>
-
 
 int main() {
 	int n=12;
