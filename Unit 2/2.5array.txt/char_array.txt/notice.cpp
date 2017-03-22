@@ -11,10 +11,9 @@ int main() {
 	//memset(str, 0, sizeof(str));//这个0是指ASCII值为零，也就是所有的单元都初始化为'\0',只要后来不把最末的'\0'换掉,就不会发生乱码;
 	char str[15];
 	for (int i = 0;i < 4;i++) {
-		str[i] = getchar();
-	}
+		str[i] = getchar();	
+        }
 	//str[14] = '\0';//自己在字符数组的末尾添加'\0';
-	getchar();
 	puts(str);
 	system("pause");
 	return 0;
