@@ -7,3 +7,42 @@
 */
 
 
+#include "stdafx.h"
+#include<cstdio>
+#include<cstdlib>
+#include<cstring>
+
+int compare(char a[], char b[]) {
+	int i;
+	for (i = 0;i < strlen(a)>strlen(b)?strlen(b):strlen(a);i++) {
+		if (*(a + i) != *(b + i)) break;
+	}
+	return *(a + i) - *(b + i);
+}
+
+int main() {
+	char a[20], b[20], c[20],t[20];
+	gets_s(a);
+	gets_s(b);
+	gets_s(c);
+	if (compare(a, b)>0) {
+		strcpy(t, a);
+		strcpy(a, b);
+		strcpy(b, t);
+	}
+	if (compare(a, c)>0) {
+		strcpy(t, a);
+		strcpy(a, c);
+		strcpy(c, t);
+	}
+	if (compare(b, c)>0) {
+		strcpy(t, b);
+		strcpy(b, c);
+		strcpy(c, t);
+	}
+	printf("%s\n%s\n%s\n", a, b, c);
+	system("pause");
+	return 0;
+}
+
+
