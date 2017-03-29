@@ -7,7 +7,58 @@
 输出:输出进行题目描述操作之后的10个整数，每个整数之后输出一个空格。请注意行尾输出换行。
 */
 
+#include "stdafx.h"
+#include<cstdio>
+#include<cstdlib>
+#include<cstring>
 
+void input(int a[],int length) {
+	for (int i = 0;i<length;i++) {
+		scanf("%d", &a[i]);
+	}
+}
+
+void exchange(int a[],int length) {
+	int m, n, max, min;
+	max = a[0];
+	min = a[0];
+	for (int i = 1;i<length;i++) {
+		if (max<*(a+i)) {
+			max= *(a+i);
+			m = i;
+		}
+
+		if (min>*(a+i)) {
+			min = *(a+i);
+			n = i;
+		}
+
+	}
+
+	*(a + m) = *(a + length - 1);
+	*(a + length - 1) = max;
+
+	*(a + n) = *a;
+	*a=min ;
+
+}
+
+void print(int a[],int length) {
+	for (int i = 0;i<length;i++) {
+		printf("%d ", *(a + i));
+	}
+	printf("\n");
+}
+
+int main() {
+	int a[10];
+	int len = sizeof(a) / sizeof(int);
+	input(a,len);
+	exchange(a,len);
+	print(a,len);
+	system("pause");
+	return 0;
+}
 
 /*
 这里是有关获取整型数组长度的问题。
