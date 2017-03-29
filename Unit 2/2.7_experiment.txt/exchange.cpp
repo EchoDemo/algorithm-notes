@@ -10,7 +10,6 @@
 #include "stdafx.h"
 #include<cstdio>
 #include<cstdlib>
-#include<cstring>
 
 void input(int a[],int length) {
 	for (int i = 0;i<length;i++) {
@@ -20,8 +19,7 @@ void input(int a[],int length) {
 
 void exchange(int a[],int length) {
 	int m, n, max, min;
-	max = a[0];
-	min = a[0];
+	max = min=a[0];
 	for (int i = 1;i<length;i++) {
 		if (max<*(a+i)) {
 			max= *(a+i);
