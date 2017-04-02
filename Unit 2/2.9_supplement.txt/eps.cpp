@@ -1,5 +1,12 @@
 /*
-浮点数在计算机中的存储并不总是精确地，"=="是完全相同才能进行判定为TRUE
+浮点数在计算机中的存储并不总是精确地，"=="是完全相同才能进行判定为TRUE;
+
+const double Pi=acos(-0.1);//圆周率；
+#define Equ(a,b) ((fabs((a)-(b)))<(eps))//等于
+#define More(a,b) (((a)-(b))>(eps))
+#define Less(a,b) (((a)-(b))<(-eps))
+#define MoreEqu(a,b) (((a)-(b))>(-eps))
+#define LessEqu(a,b) (((a)-(b))<(eps))
 */
 
 
