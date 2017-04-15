@@ -19,4 +19,24 @@
 5
 */
 
+#include "stdafx.h"
+#include<cstdio>
+#include<cstdlib>
+
+int main() {
+	int i=0,n;
+	scanf("%d", &n);
+	while (n !=1 ) {
+		if (n % 2 == 0) {
+			n /= 2;
+		}else{
+			n = (3*n + 1) / 2;
+		}
+		i++;
+	}
+	printf("%d\n", i);
+	system("pause");
+	return 0;
+}
+
 
