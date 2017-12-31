@@ -21,7 +21,7 @@ int main()
 	printf("%7.3f\n", d2);
 
 	system("pause");
-    return 0;
+        return 0;
 }
 
 
@@ -32,5 +32,5 @@ int main()
 	
 2、如果想输出%或者\，则需要在前面再加一个%或者\。例：printf("%%");
 
-3、
+
 
