@@ -1,7 +1,7 @@
 /*
   用如下公式
 */  
-![image](/image/pi.jpg)
+![image](https://github.com/EchoDemo/algorithm-notes/blob/master/Unit%202/2.4_experiment.txt/image/pi.jpg)
 /*
   求圆周率PI的近似值，直到发现某一项的绝对值小于10-6为止（该项不累加）。
   要求输出的结果总宽度占10位，其中小数部分为8位。
