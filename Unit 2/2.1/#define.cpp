@@ -11,7 +11,7 @@ int main()
 {
 	double r = 3;
 	printf("%.2f\n", pi*r*r);//求圆的面积；
-  system("pause");
+        system("pause");
 	return 0;
 }
 
