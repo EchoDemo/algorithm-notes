@@ -8,13 +8,13 @@ int main()
 {
 	int n = 3 * 2 + 1;
 	int m = (n > 6) && (n < 8);//进行与运算
-  n = n + 2;
+        n = n + 2;
 	printf("%d %d\n", n, m);
 
 	n /= m + 1;//相当于n=n/(m+1)
-  m %= 2;//相当于m=m%2
-  printf("%d %d\n", n, m);
+        m %= 2;//相当于m=m%2
+        printf("%d %d\n", n, m);
 	system("pause");
-    return 0;
+        return 0;
 }
 
