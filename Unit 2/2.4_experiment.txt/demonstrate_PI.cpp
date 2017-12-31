@@ -1,6 +1,6 @@
 /*
   用如下公式
-![](https://github.com/EchoDemo/algorithm-notes/blob/master/Unit2/2.4_experiment.txt/image/pi.jpg)
+![image](/image/pi.jpg)
   求圆周率PI的近似值，直到发现某一项的绝对值小于10-6为止（该项不累加）。
   要求输出的结果总宽度占10位，其中小数部分为8位。
   程序中使用浮点型数据时，请定义为双精度double类型。
