@@ -24,3 +24,9 @@ int main()
     return 0;
 }
 
+
+
+注：
+
+对于double类型的变量，其输出格式变成了%f，而在scanf中却是%lf。(浮点型就用double)
+
