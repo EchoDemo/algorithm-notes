@@ -13,7 +13,7 @@ int main()
 	//double c = a + 3.5;
 	printf("%d\n", (int)r);
 	printf("%d\n", a / b);
-	printf("%.1f\n", (double)a / (double)b);
+	printf("%.1f\n", (double)a / (double)b);//保留一位小数输出；
 
 	printf("%d\n", r);
 	printf("%f%f\n", (double)a, b);
