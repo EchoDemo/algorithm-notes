@@ -9,8 +9,8 @@ typedef long long LL;//给long long起个别名LL；
 int main()
 {
 	LL a = 123456789012345LL, b = 234567890123456LL;//直接使用LL来定义long long数据类型；
-  printf("%lld\n", a+b);
+        printf("%lld\n", a+b);
 	system("pause");
-  return 0;
+        return 0;
 }
 
