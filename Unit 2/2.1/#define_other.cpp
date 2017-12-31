@@ -12,6 +12,6 @@ int main()
 	int num1 = 3, num2 = 5;
 	printf("%d\n", ADD(num1, num2));//宏定义是直接将对应的部分进行替换。printf("%d\n",CAL(a+1));
 	system("pause");
-    return 0;
+        return 0;
 }
 
