@@ -16,7 +16,7 @@ int main()
 
 	printf("%d %d %d\n", a, b,c);
 	system("pause");
-    return 0;
+        return 0;
 }
 
 
