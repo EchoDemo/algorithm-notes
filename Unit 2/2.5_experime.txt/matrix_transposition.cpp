@@ -24,10 +24,7 @@ int main() {
 	for (int i = 0;i < 3;i++) {
 		for (int j = 0;j < 2;j++) {
 			b[i][j] = a[j][i];
-      if(j)
-			   printf("%d", b[i][j]);
-      else
-         printf("%d ", b[i][j]);
+			printf("%d", b[i][j]);
 		}
 		printf("\n");
 	}
