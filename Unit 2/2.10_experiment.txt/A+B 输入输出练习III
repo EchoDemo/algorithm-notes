@@ -25,7 +25,7 @@
 
 int main() {
 	int a, b;
-	while (scanf("%d%d", &a, &b),a||b) {//如果a和b都为0则跳出循环。
+	while (scanf("%d%d", &a, &b),a||b) {//如果a和b都为0则跳出循环，相当于(a!=0||b!=0)
 		printf("%d\n", a + b);
 	}
 	system("pause");
