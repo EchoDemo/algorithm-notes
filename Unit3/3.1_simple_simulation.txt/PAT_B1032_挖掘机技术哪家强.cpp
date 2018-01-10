@@ -24,12 +24,11 @@
 #include<vector>
 #include<cstring>
 
-const int maxn = 100000;
 
 int main() {
 	int n,id,score;
 	scanf("%d", &n);
-	vector<int> a[N];
+	vector<int> a(n);
 	for (int i = 0;i < n;i++) {
 		scanf("%d%d", &id, &score);
 		a[id] += score;//同ID的学校总分相加；
@@ -41,7 +40,7 @@ int main() {
 			k = i;
 		}
 	}
-	printf("%d %d\n",k ,a[k] );
+	printf("%d%d\n",k ,a[k] );
 	system("pause");
 	return 0;
 }
