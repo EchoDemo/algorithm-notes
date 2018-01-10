@@ -18,29 +18,25 @@
 2 150
 */
 
-#include "stdafx.h"
-#include<cstdio>
-#include<cstdlib>
-#include<vector>
-#include<cstring>
-
-
+#include <iostream>
+#include <vector>
+using namespace std;
 int main() {
-	int n,id,score;
-	scanf("%d", &n);
-	vector<int> a(n);
-	for (int i = 0;i < n;i++) {
-		scanf("%d%d", &id, &score);
-		a[id] += score;//同ID的学校总分相加；
-	}
-	int k=1,max = a[1];
-	for (int i = 2;i < n;i++) {//选出总分最高的学校；
-		if (a[i] > max) {
-			max = a[i];
-			k = i;
-		}
-	}
-	printf("%d%d\n",k ,a[k] );
-	system("pause");
-	return 0;
+    int N;
+    cin >> N;
+    vector<int> a(N);
+    int num, score;
+    for (int i = 0; i < N; i++) {
+        cin >> num >> score;
+        a[num] += score;
+    }
+    int max = a[1], t = 1;
+    for (int i = 1; i < N; i++) {
+        if (max < a[i]) {
+            max = a[i];
+            t = i;
+        }
+    }
+    cout << t << " " << max;
+    return 0;
 }
