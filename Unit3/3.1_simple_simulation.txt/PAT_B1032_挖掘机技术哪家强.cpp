@@ -21,6 +21,7 @@
 #include "stdafx.h"
 #include<cstdio>
 #include<cstdlib>
+#include<vector>
 #include<cstring>
 
 const int maxn = 100000;
@@ -28,8 +29,7 @@ const int maxn = 100000;
 int main() {
 	int n,id,score;
 	scanf("%d", &n);
-	int a[maxn];
-	memset(a, 0, sizeof(a));//初始化数组元素为0；
+	vector<int> a[N];
 	for (int i = 0;i < n;i++) {
 		scanf("%d%d", &id, &score);
 		a[id] += score;//同ID的学校总分相加；
