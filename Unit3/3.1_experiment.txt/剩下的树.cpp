@@ -24,4 +24,33 @@
 */
 
 
+#include "stdafx.h"
+#include<stdio.h>
+#include<stdlib.h>
 
+const int max = 10000;
+
+int main() {
+	int i,a[max], L, M;
+	while (scanf("%d", &L) != EOF) {//输入多组数据；
+		for (i = 0;i <= L;i++) {//赋值为1表示有树存在；
+			a[i] = 1;
+		}
+		scanf("%d", &M);
+		while (M > 0) {//输入M组数；
+			M--;
+			int b,c;
+			scanf("%d%d", &b, &c);
+			for (i = b;i <= c;i++) {//在所输入的区间内置为0，表示移走了。
+				a[i] = 0;
+			}
+		}
+		int j = 0;
+		for (i = 0;i <= L;i++) {
+			if (a[i] == 1) j++;//统计剩下的树；
+		}
+		printf("%d\n", j);
+	}
+	system("pause");
+	return 0;
+}
