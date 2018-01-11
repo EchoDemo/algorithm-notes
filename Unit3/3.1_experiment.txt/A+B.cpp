@@ -19,3 +19,41 @@
 
 
 
+#include "stdafx.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+long transform(char str[],int len) {//将字符串转化为数值；
+	int i,j=1;
+	long sum = 0;
+	for (i=len-1;i >=0;i--) {
+		if (str[i] >= '0'&&str[i] <= '9') {
+			sum += (str[i]-48) * j;//将得到的字符转化成相应的数再乘以它的数位。
+			j = j * 10;
+		}
+	}
+	if (str[0] == '-')
+		sum = -sum;//如果为负，则添负号；
+	return sum;
+}
+
+int main()
+{
+	char str1[13], str2[13];
+	long A, B;
+	while (scanf("%s%s", str1, str2) != EOF) {
+		int len1 = strlen(str1);
+		int len2 = strlen(str2);
+
+		A = transform(str1, len1);
+		B = transform(str2, len2);
+
+		printf("%ld\n", A + B);
+	}
+	system("pause");
+    return 0;
+}
+
+
+
