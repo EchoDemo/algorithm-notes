@@ -15,28 +15,26 @@
 
 
 #include "stdafx.h"
-#include<cstdio>
-#include<cstdlib>
-#include<cstring>
+#include<stdio.h>
+#include<stdlib.h>
 
+const int max = 200;
 
 int main() {
-	int x,n,a[200];
-	while (scanf("%d", &n) != EOF) {
-		for (int i = 0; i < n; i++) {
-			scanf("%d", &a[i]);//输入n个数；
+	int i, n, a[max], b;
+	while (scanf("%d", &n) != EOF) {//测试多组数据；
+		for (i = 0;i < n;i++) {
+			scanf("%d", &a[i]);
 		}
-
-		scanf("%d", &x);//输入需要查询的数；
-
-		int flag = -1;
-		for (int i = 0; i < n; i++) {
-			if (a[i] == x) {
-				flag = i;
+		scanf("%d", &b);//输入待检测的数；
+		int j = -1;//不存在就输出-1；
+		for (i = 0;i < n;i++) {
+			if (a[i] == b) {
+				j = i;
 				break;
 			}
 		}
-		printf("%d\n", flag);
+		printf("%d\n", j);
 	}
 	system("pause");
 	return 0;
