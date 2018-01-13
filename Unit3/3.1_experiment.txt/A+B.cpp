@@ -35,7 +35,7 @@ long transform(char str[],int len) {//将字符串转化为数值；
 	}
 	if (str[0] == '-')
 		sum = -sum;//如果为负，则添负号；
-	return sum;
+	        return sum;
 }
 
 int main()
@@ -52,7 +52,7 @@ int main()
 		printf("%ld\n", A + B);
 	}
 	system("pause");
-    return 0;
+        return 0;
 }
 
 
