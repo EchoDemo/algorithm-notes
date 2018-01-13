@@ -62,5 +62,5 @@ int main()
 		printf("%c", c);
 	}
 	system("pause");
-    return 0;
+        return 0;
 }
