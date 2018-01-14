@@ -33,7 +33,7 @@
 #include<stdlib.h>
 using namespace std;
 
-int dates(int n) {
+int dates(int n) {//计算给出日期到1年1月1日间隔的天数。
 	int i, j, Months[] = { 0,31,59,90,120,151,181,212,243,273,304,334 };
 	i = n % 10000 / 100;
 	j = Months[i - 1] + n % 100;//这里先按平年进行计算当年的天数。
