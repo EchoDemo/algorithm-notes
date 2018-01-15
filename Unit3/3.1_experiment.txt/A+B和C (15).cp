@@ -1,6 +1,6 @@
 /*
 题目描述
-给定区间[-231, 231]内的3个整数A、B和C，请判断A+B是否大于C。
+给定区间[-2^31, 2^31]内的3个整数A、B和C，请判断A+B是否大于C。
 输入
 输入第1行给出正整数T(<=10)，是测试用例的个数。随后给出T组测试用例，每组占一行，顺序给出A、B和C。整数间以空格分隔。
 输出
@@ -17,3 +17,25 @@ Case #2: true
 Case #3: true
 Case #4: false
 */
+
+
+
+#include "stdafx.h"
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+
+int main() {
+	int n,i=1;
+	cin >> n;
+	while (n--) {
+		long long A, B, C;
+		cin >> A >> B >> C;
+		if ((A + B) > C) cout << "Case #" << i++ << ": true"<<endl;
+		else cout << "Case #" << i++ << ": false"<<endl;
+	}
+	system("pause");
+	return 0;
+}
+
