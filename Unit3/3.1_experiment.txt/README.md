@@ -15,40 +15,29 @@
 样例输入
 10
 
-
 C J
-
 
 J B
 
-
 C B
-
 
 B B
 
-
 B C
-
 
 C C
 
-
 C B
-
 
 J B
 
-
 B C
-
 
 J J
 样例输出
 
-
 5 3 2
 
-
 2 3 5
+
 B B
