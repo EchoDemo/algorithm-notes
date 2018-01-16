@@ -36,32 +36,28 @@ using namespace std;
 int main() {
 	char a[80], b[82][82];
 	gets_s(a);//要用gets或者scanf，否则的话会出现乱码；
-	int i=0,j=1,len = strlen(a);
+	int i = 0, j = 0, len = strlen(a);
 
 	for (int k = 0;k < len;k++) {
-		if (a[k] ==32 ) {//如果为空格的话；
-			b[i][0] = j;//存储这一维的长度；
+		if (a[k] == ' ') {//如果为空格的话;
+			b[i][j] = '\0';//末尾结束符；
 			i++;//下一维继续存储；
-			j = 1;
-		}else {
+			j = 0;
+		}
+		else {
 			b[i][j++] = a[k];
 		}
 	}
-
-	for (int k = 1;k < j;k++) {//输出倒数第一个单词；
-		cout << b[i][k];
-	}
-	cout << " ";
-	for (int k = i-1;k >= 0;k--) {//输出其他的单词；
-		for (j = 1;j < b[k][0];j++) {
-			cout << b[k][j];
-		}
+	b[i][j] = '\0';
+	for (int k = i;k >= 0;k--) {
+		cout << b[k];
 		if (k != 0)
 			cout << " ";
 	}
 	system("pause");
 	return 0;
 }
+
 
 
 
