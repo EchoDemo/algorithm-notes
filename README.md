@@ -11,5 +11,5 @@
 
 (3)、在visual studio的gets_s放到PAT评测中要写成gets。输入字符数组要用gets或者scanf("%s",str)，他们默认添加'\0'作为结束符。
 
-(4)、对于动态数组，需要使用声明#include<vector>的vector<int> a(n)或者使用int *a=new int[n]来定义(但需要记得delete[] a)。
+(4)、对于动态数组，需要使用声明#include"vector"的vector或者使用int *a=new int[n]来定义(但需要记得delete[] a)。
 
