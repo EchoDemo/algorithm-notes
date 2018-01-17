@@ -53,7 +53,7 @@ B B
 
 #include "stdafx.h"
 
-#include<iostream>
+#include"iostream"
 	
 #include<stdlib.h>
 
@@ -135,9 +135,16 @@ int main() {
 	}
 	
 	cout << xwin << " " << (m - xwin - xlose) << " " << xlose << endl;
+	
 	cout << xlose << " " << (m - xwin - xlose) << " " << xwin << endl;
+	
 	cout << ((xb >= xc) ? ((xb >= xj) ? 'B' : 'J') : ((xc >= xj) ? 'C' : 'J')) << " ";
+	
 	cout << ((yb >= yc) ? ((yb >= yj) ? 'B' : 'J') : ((yc >= yj) ? 'C' : 'J')) << endl;
+	
 	system("pause");
+	
 	return 0;
+	
 }
+
