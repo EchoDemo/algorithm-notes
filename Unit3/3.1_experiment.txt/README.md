@@ -52,50 +52,88 @@ B B
 
 
 #include "stdafx.h"
+
 #include<iostream>
+	
 #include<stdlib.h>
+
 using namespace std;
 
 
-
 int main() {
+
 	int n,m,xc=0,xb=0,xj=0,yc=0,yb=0,yj=0,xwin=0,xlose=0;
+	
 	cin >> n;
+	
 	m = n;
+	
 	while (n--) {
+	
 		char x, y;
+		
 		cin >> x >> y;
+		
 		if (x == 'C') {
+		
 			if (y == 'J') {
+			
 				xc++;
+				
 				xwin++;
+				
 			}else if (y == 'B') {
+			
 				xlose++;
+				
 				yb++;
+				
 			}else {}
+			
 		}
+		
 		else if (x == 'J') {
+		
 			if (y == 'C') {
+			
 				xlose++;
+				
 				yc++;
+				
 			}
+			
 			else if (y == 'B') {
+			
 				xwin++;
+				
 				xj++;
+				
 			}else{}
+			
 		
 		}
+		
 		else {
+		
 			if (y == 'C') {
+			
 				xwin++;
+				
 				xb++;
+				
 			}else if (y == 'J') {
+			
 				xlose++;
+				
 				yj++;
+				
 			}else{}
+			
 		
 		}
+		
 	}
+	
 	cout << xwin << " " << (m - xwin - xlose) << " " << xlose << endl;
 	cout << xlose << " " << (m - xwin - xlose) << " " << xwin << endl;
 	cout << ((xb >= xc) ? ((xb >= xj) ? 'B' : 'J') : ((xc >= xj) ? 'C' : 'J')) << " ";
