@@ -18,6 +18,7 @@
 输出第1、2行分别给出甲、乙的胜、平、负次数，数字间以1个空格分隔。第3行给出两个字母，分别代表甲、乙获胜次数最多的手势，中间有1个空格。如果解不唯一，则输出按字母序最小的解。
 
 样例输入
+
 10
 
 C J
@@ -47,3 +48,58 @@ J J
 2 3 5
 
 B B
+
+
+
+#include "stdafx.h"
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+
+
+
+int main() {
+	int n,m,xc=0,xb=0,xj=0,yc=0,yb=0,yj=0,xwin=0,xlose=0;
+	cin >> n;
+	m = n;
+	while (n--) {
+		char x, y;
+		cin >> x >> y;
+		if (x == 'C') {
+			if (y == 'J') {
+				xc++;
+				xwin++;
+			}else if (y == 'B') {
+				xlose++;
+				yb++;
+			}else {}
+		}
+		else if (x == 'J') {
+			if (y == 'C') {
+				xlose++;
+				yc++;
+			}
+			else if (y == 'B') {
+				xwin++;
+				xj++;
+			}else{}
+		
+		}
+		else {
+			if (y == 'C') {
+				xwin++;
+				xb++;
+			}else if (y == 'J') {
+				xlose++;
+				yj++;
+			}else{}
+		
+		}
+	}
+	cout << xwin << " " << (m - xwin - xlose) << " " << xlose << endl;
+	cout << xlose << " " << (m - xwin - xlose) << " " << xwin << endl;
+	cout << ((xb >= xc) ? ((xb >= xj) ? 'B' : 'J') : ((xc >= xj) ? 'C' : 'J')) << " ";
+	cout << ((yb >= yc) ? ((yb >= yj) ? 'B' : 'J') : ((yc >= yj) ? 'C' : 'J')) << endl;
+	system("pause");
+	return 0;
+}
