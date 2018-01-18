@@ -1,9 +1,17 @@
 /*
-Programming Ability Test (PAT) is organized by the College of Computer Science and Technology of Zhejiang University. Each test is supposed to run simultaneously in several places, and the ranklists will be merged immediately after the test. Now it is your job to write a program to correctly merge all the ranklists and generate the final rank.
+Programming Ability Test (PAT) is organized by the College of Computer Science and Technology of Zhejiang University. Each test is 
+
+supposed to run simultaneously in several places, and the ranklists will be merged immediately after the test. Now it is your job to 
+
+write a program to correctly merge all the ranklists and generate the final rank.
 
 Input Specification:
 
-Each input file contains one test case. For each case, the first line contains a positive number N (<=100), the number of test locations. Then N ranklists follow, each starts with a line containing a positive integer K (<=300), the number of testees, and then K lines containing the registration number (a 13-digit number) and the total score of each testee. All the numbers in a line are separated by a space.
+Each input file contains one test case. For each case, the first line contains a positive number N (<=100), the number of test locations.
+
+Then N ranklists follow, each starts with a line containing a positive integer K (<=300), the number of testees, and then K lines contain
+
+ing the registration number (a 13-digit number) and the total score of each testee. All the numbers in a line are separated by a space.
 
 Output Specification:
 
@@ -11,7 +19,9 @@ For each test case, first print in one line the total number of testees. Then pr
 
 registration_number final_rank location_number local_rank
 
-The locations are numbered from 1 to N. The output must be sorted in nondecreasing order of the final ranks. The testees with the same score must have the same rank, and the output must be sorted in nondecreasing order of their registration numbers.
+The locations are numbered from 1 to N. The output must be sorted in nondecreasing order of the final ranks. The testees with the same 
+
+score must have the same rank, and the output must be sorted in nondecreasing order of their registration numbers.
 
 Sample Input:
 2
@@ -39,6 +49,11 @@ Sample Output:
 1234567890011 9 2 4
  */
 
+/*
+题目大意：有若干个考场，每个考场有若干名考生，给出考生的编号和成绩，输出顺序按所有考场的考生分数由高到低顺序输出，如果分数相等，则按编号顺序输出。
+
+此外，还需要有每位考生所在的考场号和的所在考场的排名(排名规则与整体排名规则一致)。
+*/
 
 #include "stdafx.h"
 #include<iostream>
