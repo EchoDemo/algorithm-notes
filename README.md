@@ -13,3 +13,5 @@
 
 (4)、对于动态数组，需要使用声明#include"vector"的vector或者使用int *a=new int[n]来定义(但需要记得delete[] a)。
 
+(5)、两个字符数组的相等与否不能用==来判别；
+
